@@ -1,0 +1,118 @@
+.App {
+	max-width: 1800px;
+	padding: 15px;
+	margin: 0 auto;
+	background-color: #fff;
+	width: 100%;
+}
+
+.Notebook {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	margin: 4px 20px 10px;
+
+	border: 1px solid #e4e4e4;
+	border-radius: 4px;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+
+	height: calc(100vh - 130px);
+}
+
+.note-menu {
+	width: 320px;
+
+	height: 100%;
+	overflow: auto;
+	flex-shrink: 0;
+	flex-grow: 0;
+	font-size: 14px;
+	line-height: 16px;
+	border-right: 1px solid #e4e4e4;
+}
+
+.note-btn-add {
+	margin: 0;
+	padding: 25px;
+	padding-left: 35px;
+	overflow: visible;
+	width: 100%;
+
+	font-size: 20px;
+
+	text-decoration: none;
+	border-bottom: 1px solid #e4e4e4;
+
+	background: url('./img/plus.svg') 25px no-repeat;
+	background-size: 25px;
+}
+
+.note-list {
+	list-style-type: none;
+	padding: 0;
+}
+
+.note-item {
+	cursor: pointer;
+}
+
+.note-wrapper {
+	padding: 20px;
+
+	display: flex;
+
+	align-items: center;
+	border-bottom: 1px solid #e4e4e4;
+}
+
+.note-index {
+	display: block;
+	padding-top: 20px;
+	padding-left: 20px;
+	font-size: 18px;
+	margin-right: auto;
+}
+
+.note-text {
+	font-size: 16px;
+	margin-right: auto;
+}
+
+.note-btn-edit,
+.note-btn-del {
+	padding: 5px 10px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.note-btn-edit {
+	background-color: #fff;
+	color: #000;
+	margin-right: 15px;
+	width: 20px;
+	height: 20px;
+	background: url('./img/edit.svg') center no-repeat;
+	background-size: 25px;
+}
+
+.note-btn-del {
+	background-color: #fff;
+	color: #000;
+	margin-right: 15px;
+	width: 20px;
+	height: 20px;
+	background: url('./img/del.svg') center no-repeat;
+	background-size: 20px;
+}
+
+.note-textarea {
+	font-size: 18px;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	border: 1px solid #e4e4e4;
+
+	font-size: 16px;
+
+	resize: none;
+}
